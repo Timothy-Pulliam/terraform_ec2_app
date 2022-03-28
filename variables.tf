@@ -13,3 +13,8 @@ variable "secret_key" {
   description = "Access key secret for programmatic/CLI access"
   type = string
 }
+
+variable "token" {
+  description = "Token for AWS SSO"
+  type = string
+}
