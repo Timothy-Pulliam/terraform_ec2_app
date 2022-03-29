@@ -18,3 +18,9 @@ variable "token" {
   description = "Token for AWS SSO"
   type = string
 }
+
+variable "extra_tags" {
+  description = "Extra tags which are added to all created resources"
+  type        = map(string)
+  default     = {"Environment": "dev", "Terraform": "true"}
+}
