@@ -1,0 +1,26 @@
+{
+    "TableName": "tfm-state-lock",
+    "KeySchema": [
+        { 
+            "AttributeName": "LockID", 
+            "KeyType": "HASH" 
+        }
+    ],
+    "AttributeDefinitions": [
+        { 
+            "AttributeName": "LockID", 
+            "AttributeType": "S" 
+        }
+    ],
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 5,
+      "WriteCapacityUnits": 5
+    },
+    "Tags": [
+        {
+            "Key": "env",
+            "Value": "dev"
+        }
+    ],
+    "TableClass": "STANDARD"
+}
